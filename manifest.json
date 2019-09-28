@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "くらしす謎の数値",
+    "version": "0.0.1",
+    "description": "くらしすの表に謎の数値を追加します",
+    "content_scripts": [
+      {
+        "matches": ["https://www.k.kyoto-u.ac.jp/student/la/timeslot/lecture_search*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+        "2018.json",
+        "2017.json"
+    ]    
+  }
