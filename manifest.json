@@ -5,7 +5,9 @@
     "description": "くらしすの表に謎の数値を追加します",
     "content_scripts": [
       {
-        "matches": ["https://www.k.kyoto-u.ac.jp/student/la/timeslot/lecture_search*"],
+        "matches": [
+          "https://www.k.kyoto-u.ac.jp/student/la/timeslot/lecture_search*",
+          "https://www.k.kyoto-u.ac.jp/student/la/timeslot/top*"],
         "js": ["content.js"]
       }
     ],
