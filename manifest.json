@@ -7,7 +7,8 @@
       {
         "matches": [
           "https://www.k.kyoto-u.ac.jp/student/la/timeslot/lecture_search*",
-          "https://www.k.kyoto-u.ac.jp/student/la/timeslot/top*"],
+          "https://www.k.kyoto-u.ac.jp/student/la/timeslot/top*",
+          "https://www.k.kyoto-u.ac.jp/student/la/entrylimit/regist"],
         "js": ["content.js"]
       }
     ],
