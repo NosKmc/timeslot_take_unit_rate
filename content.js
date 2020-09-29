@@ -25,7 +25,8 @@ else {
         })
         .then(([json1, json2]) => {
             table.querySelectorAll(".odd_normal,.even_normal").forEach((tr, i) => {
-                subject = tr.querySelector(`td:nth-child(${position})`).textContent.replace(/(\d[A-Z]\d+,?)+/, '').trim()
+                // 1-index
+                subject = tr.querySelector(`td:nth-child(${position+1})`).textContent.replace(/(\d[A-Z]\d+,?)+/, '').trim()
                 td = document.createElement("td")
                 item = json1.find((item) => {
                     return item['授業科目名'] === subject
