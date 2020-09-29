@@ -10,13 +10,12 @@ else {
     head.appendChild(label)
     let headtd = head.querySelectorAll("td");
     console.log(headtd);
-    let position = 0;
+    let position;
     for (position = 0; position < headtd.length; position++) {
         if (headtd[position].innerHTML.includes("科目")) {
             break;
         }
     }
-    position++;
 
     Promise.all([
         fetch(chrome.runtime.getURL("./2018.json")),
